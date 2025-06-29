@@ -1,9 +1,9 @@
 # SlopHub
 
-This little Chrome extension,  
-written (_mostly_) by GitHub's dipshit AI  
-to fix GitHub's dipshit design decisions,  
-makes it so the root landing page of `github.com`  
+This little Chrome extension,
+written (_mostly_) by GitHub's dipshit AI
+to fix GitHub's dipshit design decisions,
+makes it so the root landing page of `github.com`
 is replaced with a doom-scrollable, curated explore feed.
 
 ![Screenshot of SlopHub Chrome extension showing a curated GitHub feed with the custom header and repo links at the top of the feed.](screenshot.png)
@@ -22,5 +22,5 @@ is replaced with a doom-scrollable, curated explore feed.
 
 ## License
 
-SlopHub is licensed under the BSD 3-Clause License.  
-See [LICENSE](LICENSE) for details.
+SlopHub is licensed under the BSD 3-Clause License.
+See [LICENSE](LICENSE) for details
