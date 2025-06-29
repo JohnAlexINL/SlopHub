@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Slophub",
+  "description": "AI-generated Doomscroll extension for GitHub. Enter your token and doomscroll away.",
+  "version": "0.1",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://api.github.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/", "https://github.com/?*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["slopscroll.css", "github-mark-white.png"],
+      "matches": ["https://github.com/*"]
+    }
+  ]
+}

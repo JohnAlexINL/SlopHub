@@ -1,0 +1,156 @@
+/* Root variables for light mode */
+:root {
+  --doomscroll-bg: #fff;
+  --doomscroll-bg-subtle: #f6f8fa;
+  --doomscroll-border: #d8dee4;
+  --doomscroll-text: #24292f;
+  --doomscroll-link: #0969da;
+  --doomscroll-link-hover: #0366d6;
+  --doomscroll-muted: #848d97;
+  --doomscroll-subtle: #57606a;
+  --doomscroll-accent: #0969da;
+  --doomscroll-danger: #cf222e;
+  --doomscroll-btn-bg: #f6f8fa;
+  --doomscroll-btn-hover-bg: #eaeef2;
+}
+
+/* Dark mode overrides using prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --doomscroll-bg: #161b22;
+    --doomscroll-bg-subtle: #22272e;
+    --doomscroll-border: #30363d;
+    --doomscroll-text: #c9d1d9;
+    --doomscroll-link: #58a6ff;
+    --doomscroll-link-hover: #79c0ff;
+    --doomscroll-muted: #8b949e;
+    --doomscroll-subtle: #8b949e;
+    --doomscroll-accent: #388bfd;
+    --doomscroll-danger: #ff7b72;
+    --doomscroll-btn-bg: #22272e;
+    --doomscroll-btn-hover-bg: #2d333b;
+  }
+}
+
+/* Container and title */
+.doomscroll-container {
+  max-width: 700px;
+  margin: 32px auto;
+  background: var(--doomscroll-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(27, 31, 35, 0.05);
+  padding: 24px 24px 12px 24px;
+  font-family: system-ui, sans-serif;
+}
+
+.doomscroll-title {
+  font-size: 1.7em;
+  font-weight: 600;
+  color: var(--doomscroll-text);
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.doomscroll-header {
+    margin: 18px;
+}
+
+.doomscroll-github-logo {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  background: transparent;
+}
+
+.doomscroll-dashboard {
+  font-size: 9px;
+  color: gray;
+  display: block;
+}
+
+/* Feed */
+.doomscroll-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Repo card */
+.doomscroll-repo {
+  padding: 16px 16px 12px 16px;
+  border: 1px solid var(--doomscroll-border);
+  border-radius: 7px;
+  background: var(--doomscroll-bg-subtle);
+  transition: box-shadow 0.12s, border-color 0.12s;
+  box-shadow: 0 0.5px 1.5px rgba(27, 31, 35, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.doomscroll-repo:hover {
+  box-shadow: 0 2px 8px rgba(27, 31, 35, 0.08);
+  border-color: var(--doomscroll-accent);
+}
+
+/* Repo name link */
+.doomscroll-repo-link {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: var(--doomscroll-link);
+  text-decoration: none;
+}
+
+.doomscroll-repo-link:hover, .doomscroll-repo-link:focus {
+  text-decoration: underline;
+  color: var(--doomscroll-link-hover);
+}
+
+/* Stars */
+.doomscroll-repo-stars {
+  font-size: 1em;
+  color: var(--doomscroll-muted);
+  margin-left: 7px;
+  font-weight: 500;
+}
+
+/* Description */
+.doomscroll-repo-desc {
+  color: var(--doomscroll-subtle);
+  margin-top: 6px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Load More */
+.doomscroll-load-more-row {
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.doomscroll-load-more {
+  font-size: 1em;
+  padding: 8px 26px;
+  background: var(--doomscroll-btn-bg);
+  border: 1px solid var(--doomscroll-border);
+  border-radius: 6px;
+  color: var(--doomscroll-text);
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.doomscroll-load-more:hover,
+.doomscroll-load-more:focus {
+  background: var(--doomscroll-btn-hover-bg);
+  border-color: var(--doomscroll-accent);
+}
+
+/* Empty and error messages */
+.doomscroll-empty-message,
+.doomscroll-error-message {
+  text-align: center;
+  margin: 48px auto;
+  color: var(--doomscroll-danger);
+  font-size: 1.1em;
+}

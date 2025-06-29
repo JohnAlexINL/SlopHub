@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 18px;
+            color: white;
+            background-color: #333;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        a { text-decoration: none; color: #36f; }
+    </style>
+    <h1>Slophub Settings</h1>
+    <meta charset="utf-8">
+    <title>GitHub Token</title>
+    <style>
+        body { font-family: system-ui,sans-serif; min-width: 280px; }
+        label { display:block; margin-bottom:4px;}
+        input[type="password"] { width:100%; margin-bottom:8px;}
+        button { font-size:1em;}
+        #status { color:#d33; margin-top:5px;}
+    </style>
+</head>
+<body>
+    <label for="token-input">GitHub Token:</label>
+    <input id="token-input" type="password" placeholder="Paste your token">
+    <button id="save-token">Save</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+    <label class="toggle-label"><input type="checkbox" id="autoLoadToggle">Autoload More</label>
+    <i> If you do not have an API token yet, create one over at </i>
+        <a href="https://github.com/settings/tokens">github.com/settings/tokens</a>.
+        <i>This token <b>does not need</b> any special permissions. </i>
+</body>
+</html>
